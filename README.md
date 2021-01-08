@@ -12,3 +12,6 @@ So far,
 * We can have the data as a sql comment so it will add the  '--'
 * We can also add a line number
 
+# Sample Usage:
+
+[Sample Usage](./blob/howto.png)
