@@ -14,4 +14,4 @@ So far,
 
 # Sample Usage:
 
-[Sample Usage](./blob/howto.png)
+![Sample Usage](./blob/howto.png)
