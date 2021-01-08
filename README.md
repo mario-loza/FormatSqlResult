@@ -1,5 +1,5 @@
 # FormatSqlResult
-This small tool helps developers to store ssms queries results in a string format so they can be copied for latter reference. This has come in handy for me when trying to resolve issues, I can get a history of the queries along with my notes.
+This small tool helps developers to store ssms queries results in a string format so they can be copied for later reference. This has come in handy for me when trying to resolve issues, I can get a history of the queries along with my notes.
 
 # How to use
 After runnig a query on ssms just copy all the results usign the 'include headers' option and see the magic. the open the application and click on the paste button.
