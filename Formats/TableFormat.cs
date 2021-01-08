@@ -34,7 +34,7 @@ namespace Formats
       }
 
       int totalWidth = list.Sum() + list.Count * 3 + 1;
-      string separator = (withLineNumbers ? " " : "") + "=".PadRight(totalWidth, '=') + Environment.NewLine;
+      string separator = (withLineNumbers ? "   " : "") + "=".PadRight(totalWidth, '=') + Environment.NewLine;
 
       //Header
       result += prefix + separator;
@@ -46,7 +46,7 @@ namespace Formats
           line = line + matrix[i, j].PadRight(list[j]) + " | ";
         }
 
-        result = result + prefix + (withLineNumbers ? " " : "" ) + line.TrimEnd(new char[0]) + Environment.NewLine;
+        result = result + prefix + (withLineNumbers ? "   " : "" ) + line.TrimEnd(new char[0]) + Environment.NewLine;
       }
       result += prefix + separator;
 
@@ -61,7 +61,7 @@ namespace Formats
           text2 = text2 + matrix[i, j].PadRight(list[j]) + " | ";
         }
 
-        result = result + prefix + (!withLineNumbers ? "" : i < 1 ? " " : Convert.ToString(i)) + text2.TrimEnd(new char[0]) + Environment.NewLine;
+        result = result + prefix + (!withLineNumbers ? "" : i < 1 ? "   " : i.ToString("D3")) + text2.TrimEnd(new char[0]) + Environment.NewLine;
 
       }
 
